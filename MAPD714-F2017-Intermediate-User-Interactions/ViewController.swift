@@ -6,28 +6,47 @@
 //  Copyright © 2017 Centennial. All rights reserved.
 //
 //  Intermediate User Interaction demo project
-//  Version 0.1 - Build basic UI
+//  Version 0.2 - Added outlets and actions
 
 import UIKit
 
 class ViewController: UIViewController {
     
 
+    
+    // OUTLETS ++++++++++++++++++++++++++++++++++
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var numberTextField: UITextField!
+    
+    @IBOutlet weak var sliderLabel: UILabel!
+    
+    
+    
+    // INHERITED METHODS ++++++++++++++++++++++++++++++++++
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        
-        
+   
+    }
+    
+    // ACTION METHODS
+    
+    @IBAction func onSliderChanged(_ sender: UISlider) {
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func onSegmentedControlChanged(_ sender: UISegmentedControl) {
     }
-
+    
+    @IBAction func doSomethingPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func onSwitchChanged(_ sender: UISwitch) {
+    }
+    
+    
 
 }
 
